@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <title>Spotify</title>
+  </head>
+
+  <body>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/section1.html"></include>
+      <section class="section2">
+        <h2 class="section2-title">¿Por qué pasarte a premium?</h2>
+        <include
+          src="./partials/section2_article.html"
+          image="./assets/images/benefit-1.png"
+          strongText="Descarga música"
+          lightText="Llévala siempre contigo"
+        ></include>
+        <include
+          src="./partials/section2_article.html"
+          image="./assets/images/benefit-2.png"
+          strongText="Sin anuncios"
+          lightText="Disfruta de música sin interrupciones"
+        ></include>
+        <include
+          src="./partials/section2_article.html"
+          image="./assets/images/benefit-3.png"
+          strongText="Escucha lo que quieras"
+          lightText="Incluso en el móvil"
+        ></include>
+        <include
+          src="./partials/section2_article.html"
+          image="./assets/images/benefit-4.png"
+          strongText="Todas las canciones que quieras"
+          lightText="Simplemente dale a siguiente"
+        ></include>
+      </section>
+    </main>
+    <include src="./partials/footer.html"></include>
+  </body>
+</html>

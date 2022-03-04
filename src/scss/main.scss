@@ -1,0 +1,139 @@
+@import "core/variables";
+@import "core/reset";
+/* @import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index"; */
+
+:root {
+  font-family: "Roboto";
+  --main-text: black;
+  --secondary-text: white;
+  --main-background: white;
+  --secondary-background: #2940ab;
+  --header-footer-background: black;
+  --button-color: rgb(51, 167, 103);
+}
+
+/* header */
+
+.header {
+  background-color: var(--header-footer-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.header-logo {
+  width: 100px;
+  margin: 20px;
+}
+
+.header-menu {
+  display: none;
+  list-style: none;
+  color: var(--secondary-text);
+}
+
+.header-menu-link {
+  text-decoration: none;
+  margin: 20px;
+  color: var(--secondary-text);
+}
+
+.header-icon-menu {
+  height: 30px;
+  width: 30px;
+  display: block;
+  margin-right: 20px;
+}
+/* main section */
+
+.section1 {
+  background-color: var(--secondary-background);
+  padding: 20px;
+  color: var(--secondary-text);
+  background-image: url(../images/premium_dancer.png);
+  background-blend-mode: multiply;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.section1-button {
+  background-color: var(--button-color);
+  color: var(--secondary-text);
+  padding: 15px 30px 15px 30px;
+  border: 0px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.section2-article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section2-article-image {
+  width: 200px;
+  margin: 20px;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--header-footer-background);
+  color: var(--secondary-text);
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  box-sizing: border-box;
+}
+.footer-container-left {
+  letter-spacing: 2pt;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 20px;
+  font-size: 10px;
+  line-height: 40px;
+}
+.footer-container-right {
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 3px;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.spain {
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+  flex-direction: row;
+  margin-right: -124px;
+}
+
+.spain-1 {
+  padding: 10px;
+}
+
+.copyright {
+  padding-right: 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
