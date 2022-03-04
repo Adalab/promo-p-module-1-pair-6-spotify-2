@@ -8,19 +8,13 @@
 @import "pages/index"; */
 
 :root {
-  font-family: "Roboto";
-  --main-text: black;
-  --secondary-text: white;
-  --main-background: white;
-  --secondary-background: #2940ab;
-  --header-footer-background: black;
-  --button-color: rgb(51, 167, 103);
+  font-family: $font-main;
 }
 
 /* header */
 
 .header {
-  background-color: var(--header-footer-background);
+  background-color: $background-header-footer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,13 +31,13 @@
 .header-menu {
   display: none;
   list-style: none;
-  color: var(--secondary-text);
+  color: $color-secondary;
 }
 
 .header-menu-link {
   text-decoration: none;
   margin: 20px;
-  color: var(--secondary-text);
+  color: $color-secondary;
 }
 
 .header-icon-menu {
@@ -55,9 +49,9 @@
 /* main section */
 
 .section1 {
-  background-color: var(--secondary-background);
+  background-color: $background-secondary;
   padding: 20px;
-  color: var(--secondary-text);
+  color: $color-secondary;
   background-image: url(../images/premium_dancer.png);
   background-blend-mode: multiply;
   background-position: top right;
@@ -65,8 +59,8 @@
 }
 
 .section1-button {
-  background-color: var(--button-color);
-  color: var(--secondary-text);
+  background-color: $background-button;
+  color: $color-secondary;
   padding: 15px 30px 15px 30px;
   border: 0px;
   border-radius: 50px;
@@ -96,8 +90,8 @@
 /* footer */
 
 .footer {
-  background-color: var(--header-footer-background);
-  color: var(--secondary-text);
+  background-color: $background-header-footer;
+  color: $color-secondary;
   display: flex;
   justify-content: space-between;
   height: 150px;
