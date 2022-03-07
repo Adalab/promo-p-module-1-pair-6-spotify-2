@@ -16,7 +16,7 @@
 
     <form action="https://adalab-server-form.herokuapp.com/" method="get">
       <fieldset>
-        <legend>Regístrate con tu correo electrónico</legend>
+        <p>Regístrate con tu correo electrónico</p>
         <div>
           <label for="email">¿Cuál es tu correo electrónico?</label>
           <input
@@ -54,9 +54,45 @@
           />
           <p>Esto aparece en tu perfil</p>
         </div>
-        <div>
+        <!-- <div>
           <label for="birthDate">¿Cuál es tu fecha de nacimiento?</label>
           <input type="date" name="birthDate" id="birthDate" />
+        </div> -->
+        <div>
+          <p>¿Cuál es tu fecha de nacimiento?</p>
+          <label for="birthDay">Día</label>
+          <input
+            type="number"
+            max="31"
+            min="1"
+            id="birthDay"
+            name="birthDate"
+            placeholder="DD"
+          />
+          <label for="birthMonth">Mes</label>
+          <select name="birthDate" id="birthMonth">
+            <option value="january">Enero</option>
+            <option value="february">Enero</option>
+            <option value="march">Enero</option>
+            <option value="april">Enero</option>
+            <option value="may">Enero</option>
+            <option value="june">Enero</option>
+            <option value="july">Enero</option>
+            <option value="august">Enero</option>
+            <option value="september">Enero</option>
+            <option value="october">Enero</option>
+            <option value="november">Enero</option>
+            <option value="december">Enero</option>
+          </select>
+          <label for="birthYear">Año</label>
+          <input
+            type="number"
+            max="2022"
+            min="1900"
+            id="birthYear"
+            name="birthDate"
+            placeholder="AAAA"
+          />
         </div>
         <div>
           <p>¿Cuál es tu género?</p>
