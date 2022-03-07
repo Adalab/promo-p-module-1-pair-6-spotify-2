@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <!--     Spotify 
+    Regístrate gratis para escuchar 
+    Regístrate con facebook 
+    Regístrate
+    con google
+    o  -->
+
+    <form action="https://adalab-server-form.herokuapp.com/" method="get">
+      <fieldset>
+        <legend>Regístrate con tu correo electrónico</legend>
+        <div>
+          <label for="email">¿Cuál es tu correo electrónico?</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Pon tu correo electrónico"
+          />
+        </div>
+        <div>
+          <label for="email">Confirma tu correo electrónico</label>
+          <input
+            type="email"
+            id="email2"
+            name="email2"
+            placeholder="Vuelve a poner tu correo electrónico"
+          />
+        </div>
+        <div>
+          <label for="password">Crea una contraseña</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Crea una contraseña"
+          />
+        </div>
+        <div>
+          <label for="userName">¿Cómo quieres que te llamemos? </label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Pon un nombre de perfil"
+          />
+          <p>Esto aparece en tu perfil</p>
+        </div>
+        <div>
+          <label for="birthDate">¿Cuál es tu fecha de nacimiento?</label>
+          <input type="date" name="birthDate" id="birthDate" />
+        </div>
+        <div>
+          <p>¿Cuál es tu género?</p>
+          <input type="radio" id="genderMale" name="gender" value="male" />
+          <label for="genderMale">Hombre</label>
+          <input type="radio" id="genderFemale" name="gender" value="female" />
+          <label for="genderMale">Mujer</label>
+          <input
+            type="radio"
+            id="genderNonBinary>"
+            name="gender"
+            value="nonBinary"
+          />
+          <label for="genderMale">No binario</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <input
+            type="checkbox"
+            name="customerData"
+            id="newsSubscription"
+            value="newsSubscription"
+          />
+          <label for="newsSubscription">
+            Quiero que me enviéis novedades y ofertas de Spotify</label
+          >
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="customerData"
+            id="marketingSubscription"
+            value="marketingSubscription"
+          />
+          <label for="marketingSubscription"
+            >Compartir mis datos de registro con los porveedores de contenidos
+            de Spotify para fines de marketing. Ten en cuenta que tis datos
+            puedes ser transferidos a un país de fuera del EEE, tal y como se
+            recoge en nuestra política de privacidad.</label
+          >
+        </div>
+      </fieldset>
+      <input type="submit" value="Regístrate" />
+      ¿Ya tienes cuenta? Inicia sesión
+    </form>
+  </body>
+</html>
