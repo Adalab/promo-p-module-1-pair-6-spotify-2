@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Formulario de registro</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
       <fieldset>
         <p>Regístrate con tu correo electrónico</p>
         <div>
-          <label for="email">¿Cuál es tu correo electrónico?</label>
+          <label class="label_text" for="email">¿Cuál es tu correo electrónico?</label>
           <input
             type="email"
             id="email"
@@ -27,7 +28,7 @@
           />
         </div>
         <div>
-          <label for="email">Confirma tu correo electrónico</label>
+          <label class="label_text" for="email">Confirma tu correo electrónico</label>
           <input
             type="email"
             id="email2"
@@ -36,7 +37,7 @@
           />
         </div>
         <div>
-          <label for="password">Crea una contraseña</label>
+          <label class="label_text" for="password">Crea una contraseña</label>
           <input
             type="password"
             id="password"
@@ -45,7 +46,7 @@
           />
         </div>
         <div>
-          <label for="userName">¿Cómo quieres que te llamemos? </label>
+          <label class="label_text" for="userName">¿Cómo quieres que te llamemos? </label>
           <input
             type="text"
             name="userName"
@@ -71,7 +72,7 @@
             name="birthDate"
             placeholder="DD"
           />
-          <label for="birthMonth">Mes</label>
+          <label class="label_text" for="birthMonth">Mes</label>
           <select name="birthDate" id="birthMonth">
             <option value="month" selected disabled>Mes</option>
             <option value="january">Enero</option>
@@ -87,7 +88,7 @@
             <option value="november">Noviembre</option>
             <option value="december">Diciembre</option>
           </select>
-          <label for="birthYear">Año</label>
+          <label class="label_text" for="birthYear">Año</label>
           <input
             type="number"
             max="2022"
@@ -100,16 +101,16 @@
         <div>
           <p>¿Cuál es tu género?</p>
           <input type="radio" id="genderMale" name="gender" value="male" />
-          <label for="genderMale">Hombre</label>
+          <label class="label_text" for="genderMale">Hombre</label>
           <input type="radio" id="genderFemale" name="gender" value="female" />
-          <label for="genderMale">Mujer</label>
+          <label class="label_text" for="genderMale">Mujer</label>
           <input
             type="radio"
             id="genderNonBinary>"
             name="gender"
             value="nonBinary"
           />
-          <label for="genderMale">No binario</label>
+          <label class="label_text" for="genderMale">No binario</label>
         </div>
       </fieldset>
 
@@ -121,7 +122,7 @@
             id="newsSubscription"
             value="newsSubscription"
           />
-          <label for="newsSubscription">
+          <label class="label_text" for="newsSubscription">
             Quiero que me enviéis novedades y ofertas de Spotify</label
           >
         </div>
@@ -132,7 +133,7 @@
             id="marketingSubscription"
             value="marketingSubscription"
           />
-          <label for="marketingSubscription"
+          <label class="label_text" for="marketingSubscription"
             >Compartir mis datos de registro con los porveedores de contenidos
             de Spotify para fines de marketing. Ten en cuenta que tis datos
             puedes ser transferidos a un país de fuera del EEE, tal y como se
