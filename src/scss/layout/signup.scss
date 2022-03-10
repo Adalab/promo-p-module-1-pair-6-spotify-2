@@ -1,0 +1,23 @@
+.form-section {
+  border: 0;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.form-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 0.8em;
+  font-weight: 600;
+  /*   text-align: center; */
+}
+
+.form__date {
+  display: flex;
+  flex-direction: row;
+}
